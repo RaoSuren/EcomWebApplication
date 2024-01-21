@@ -2,7 +2,7 @@ import JWT from "jsonwebtoken";
 import { comparePassword, hashedPassword } from "../helpers/authHelper.js";
 import userModel from "../models/userModel.js";
 
-const JWT_SECRET = "";
+const JWT_SECRET = "HTGahgyg@56ghgtf*%$";
 export const registerController = async (req, res) => {
   try {
     const { name, email, password, phone, address } = req.body;

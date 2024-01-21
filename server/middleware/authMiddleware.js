@@ -1,7 +1,7 @@
 import JWT from "jsonwebtoken";
 import userModel from "../models/userModel.js";
 
-const JWT_SECRET = "";
+const JWT_SECRET = "HTGahgyg@56ghgtf*%$";
 export const requireSignIn = (req, res, next) => {
   try {
     const decode = JWT.verify(req.headers.authorization, JWT_SECRET);
