@@ -4,6 +4,7 @@ import userModel from "../models/userModel.js";
 const JWT_SECRET = "HTGahgyg@56ghgtf*%$";
 export const requireSignIn = (req, res, next) => {
   try {
+    console.log("Hit");
     const decode = JWT.verify(req.headers.authorization, JWT_SECRET);
     req.user = decode;
     next();
